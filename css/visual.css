@@ -53,3 +53,10 @@ span {
 .visual-tab{
     padding: 2em;
 }
+
+/* Social Media */
+.graphCanvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
