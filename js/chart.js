@@ -1,5 +1,5 @@
 // Timed function
-setTimeout(createCharts, 3000);
+setTimeout(createCharts, 1500);
 
 function createCharts() {
 
@@ -74,6 +74,7 @@ function createCharts() {
             ]
         },
         options: {
+            responsive: true,
             plugins: {
                 title: {
                     display: true,
@@ -141,6 +142,7 @@ function createCharts() {
             ]
         },
         options: {
+            responsive: true,
             plugins: {
                 title: {
                     display: true,
@@ -202,6 +204,7 @@ function createCharts() {
             ]
         },
         options: {
+            responsive: true,
             plugins: {
                 title: {
                     display: true,
@@ -292,6 +295,7 @@ function createCharts() {
             ]
         },
         options: {
+            responsive: true,
             plugins: {
                 title: {
                     display: true,

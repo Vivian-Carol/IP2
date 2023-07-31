@@ -31,8 +31,6 @@ $(document).ready(function () {
 
     // Perform 1st API Call to Facts API
     $.ajax(instaSettings).done((response) => {
-
-        console.log(response);
         
         let limit = 50;
 
@@ -40,8 +38,6 @@ $(document).ready(function () {
             let activity = response.data[i];
             filteredResponse[i] = activity;
         }
-
-        console.log(filteredResponse);
 
     });
 
