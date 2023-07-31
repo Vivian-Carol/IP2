@@ -20,7 +20,11 @@ const instaSettings = {
 };
 
 let filteredResponse = [];
+let socialMedias = ['Instagram', 'Twitter', 'Facebook', 'Snapchat', 'LinkedIn']
 let continents = ['Africa', 'Europe', 'Australia', 'North America', 'South America', 'Asia', 'Antarctica'];
+let africanCountries = ['South Africa', 'Egypt', 'Kenya', 'Nigeria'];
+let famousBrands = ['Nike', 'Louis Vouitton', 'Lacoste', 'Instagram'];
+let socialMediaCategories = ['Travel', 'Fashion and Style', 'Fitness and Wellness', 'Technology'];
 
 // JQuery Functionality when page is loaded
 $(document).ready(function () {
