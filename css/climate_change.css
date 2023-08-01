@@ -6,11 +6,11 @@ body {
     background-color: #EDF2FB;
     font-family: "Poppins", sans-serif !important;
 }
-
+/* Navigation bar */
 nav button {
     padding: 10px;
-    margin-left: 200px;
-    border: none;
+    margin-left: 150px;
+    border: 1px solid white;
     color: #6794A3;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
@@ -19,29 +19,33 @@ nav button {
     border-radius: 20px;
 }
 
+nav button:hover {
+    border: 2px solid #023047;
+}
+
 nav button:last-child span {
     padding: 10px 25px;
     color: #023047;
-    margin-right: 5px;
+    margin-right: 5px;   
 }
 
-.nav-link {
-    color: #6794A3;
+.nav-link{
+    color:#6794A3;
 }
 
-.nav-link:hover {
+.nav-link:hover{
     cursor: pointer;
     color: #023047;
 }
 
 #search-cta {
-    border: 2px solid transparent;
-    /* remove the border unless it's hovered over*/
-}
-
+    border: 2px solid transparent; /* remove the border unless it's hovered over*/
+  }
+  
 nav button:hover {
     color: #023047;
 }
+/* navigation bar end */
 
 .link{
     text-align: center;
