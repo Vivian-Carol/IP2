@@ -7,6 +7,42 @@ body {
     font-family: "Poppins", sans-serif !important;
 }
 
+nav button {
+    padding: 10px;
+    margin-left: 200px;
+    border: none;
+    color: #6794A3;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #8ECAE6;
+    border-radius: 20px;
+}
+
+nav button:last-child span {
+    padding: 10px 25px;
+    color: #023047;
+    margin-right: 5px;
+}
+
+.nav-link {
+    color: #6794A3;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    color: #023047;
+}
+
+#search-cta {
+    border: 2px solid transparent;
+    /* remove the border unless it's hovered over*/
+}
+
+nav button:hover {
+    color: #023047;
+}
+
 .link{
     text-align: center;
     font-size: small;
