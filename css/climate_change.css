@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EDF2FB;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.link{
+    text-align: center;
+    font-size: small;
+}
+
+.visual-header {
+    height: 100vh;
+    min-height: 500px;
+}
+
+span {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.card {
+    background-color: rgba(142, 202, 230, 0.4);
+}
+
+.card-body>a{
+    text-decoration: none;
+    color: #023047;
+    text-transform: uppercase;
+    margin: 4em;
+}
+
+.card-body>a>i{
+    color: #fff;
+}
+
+.visual-p2 {
+    height: 40vh;
+    min-height: 500px;
+    background: linear-gradient(to bottom, #023047, #8ECAE6);
+
+}
+
+.visual-p3{
+    height: 100vh;
+    min-height: 500px;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.visual-tab{
+    padding: 2em;
+}
+
+.filterSection{
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.filterSection label{
+    font-family: "Poppins", sans-serif !important;
+    font-size: 13px;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+/* Style the table */
+table {
+    font-size: 12px; /* Reduce the font size */
+    width: 100%; /* Set the table width to 100% of its container */
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+}
+
+th,
+td {
+    padding: 4px 8px; /* Reduce cell padding */
+    text-align: center; /* Center the text within cells */
+}
+
+th {
+    background-color: #f2f2f2; /* Gray background for header cells */
+    padding: 10px 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate background color for rows */
+}
+
+/* Optional: Add some additional spacing and border to the table */
+.table-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
+}
