@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EDF2FB;
+    font-family: "Poppins", sans-serif !important;
+}
+
+
+.visual-header {
+    height: 100vh;
+    min-height: 500px;
+}
+
+/* Navigation bar */
+
+nav button {
+    padding: 10px;
+    margin-left: 150px;
+    border: 1px solid white;
+    color: #6794A3;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #8ECAE6;
+    border-radius: 20px;
+}
+
+nav button:hover {
+    border: 2px solid #023047;
+}
+
+nav button:last-child span {
+    padding: 10px 25px;
+    color: #023047;
+    margin-right: 5px;   
+}
+
+.nav-link{
+    color:#6794A3;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    color: #023047;
+}
+
+#search-cta {
+    border: 2px solid transparent; /* remove the border unless it's hovered over*/
+  }
+  
+nav button:hover {
+    color: #023047;
+}
+
+/* Navigation bar end */
+
+span {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.card {
+    background-color: rgba(142, 202, 230, 0.4);
+}
+
+.card-body>a{
+    text-decoration: none;
+    color: #023047;
+    text-transform: uppercase;
+    margin: 4em;
+}
+.card-body>a>i{
+    color: #fff;
+}
+
+.visual-p2 {
+    height: 40vh;
+    min-height: 300px;
+    background: linear-gradient(to bottom, #023047, #8ECAE6);
+
+}
+
+
+.visual-p3{
+    height: 100vh;
+    min-height: 500px;
+    padding-left: 4em;
+    padding-right: 4em;
+
+}
+
+
+
+/* Jobs visualization page */
+.visual-tab{
+    padding: 2em;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Table container */
+ 
+  /* Table */
+  #job-postings-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+  
+  /* Table header */
+  #job-postings-table thead th {
+    background-color: #f2f2f2;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #ccc;
+  }
+  
+  /* Table body */
+  #job-postings-table tbody td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Table rows */
+  #job-postings-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .visual-link {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+  
+  }
+
+
+
+
+/* Input group */
+ .input-group{
+    display: flex;
+    align-items: center;
+}
+
+.input-group input,
+.input-group button {
+    margin-right: 5px;
+}
+.input-group button{
+    border-radius: 20px;
+ 
+} 
+
+
+ /*Chart section  */
+.chart-container {
+    max-width: 1500px; 
+    margin: 0 auto;
+    height:800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#filters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    margin-bottom: 5px;
+    gap: 20px;
+}
+
+
+#filter-button {
+    background-color: blue;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.chart-content{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+#chart-title{
+     margin-left: 250px;
+}
+
+canvas {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+}
