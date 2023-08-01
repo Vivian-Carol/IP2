@@ -1,0 +1,423 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@300;400;500;600;700&display=swap");
+
+body {
+    background: linear-gradient(180deg, #EDF2FB 21.79%, #8ECAE6 100%);
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
+}
+
+#hero-section {
+    background-size: cover;
+    height: 600px;
+    padding: 0px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+  }
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+nav img {
+    cursor: pointer;
+    height: 45px;
+    margin-left: 40px;
+}
+
+nav button {
+    padding: 10px;
+    margin-left: 135px;
+    margin-right: 40px;
+    border: none;
+    background-color: #EDF2FB;
+    color: #6794A3;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+nav button:last-child span{
+    display: inline-block;
+    background-color: #8ECAE6;
+    border-radius: 20px;
+    padding: 10px 25px;
+    color: #023047;
+    margin-right: 5px;	
+}
+
+
+#search-cta {
+    border: 2px solid transparent; /* remove the border unless it's hovered over*/
+  }
+  
+#search-cta:hover {
+    border-color: #023047; /* change the border color on hover */
+ }
+
+
+nav button:hover {
+    color: #023047;
+}
+
+nav .right-buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  
+.hero-text {
+    flex: 1;
+  }
+
+h1 {
+    font-family: "Vollkorn", serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: -10px;
+    background: linear-gradient(186deg, #126782 0%, #023047 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-paragraph{
+    font-family: "Poppins", sans-serif;
+    color: #023047;
+    margin-top: -25px;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.hero-button {
+    display: inline-block;
+    background-color: #8ECAE6;
+    color: #023047;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 160px;
+    height: 45px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px; /* Add margin between buttons and paragraph */
+  }
+
+.first-button {
+    color: #000000;
+    background-color: #8ECAE6;
+    margin-right: 10px;
+    border: 1px solid #ffffff;
+  }
+  
+.second-button {
+    color: #ffffff;
+    background-color: #023047;
+    margin-left: 40px;
+    border: 1px solid #ffffff;
+  }
+
+/* Navigation Section */
+#navigation-section {
+    background-image: url('/img/navigationBG.png'); 
+    background-size: cover;
+    width: 100%;
+    height: 1162px;
+}
+
+.navigation-content {
+    display: flex;
+    margin-top: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    font-size: 24px;
+}
+
+h2 {
+    font-family: "Vollkorn", serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 10px;
+    margin-top: 0px;
+    background: #023047;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-family: "Vollkorn", serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 0px;
+    background: #023047;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4{
+    color: #FFF;
+    font-family: "Vollkorn", serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5.72px;
+    text-transform: uppercase;
+}
+
+
+.box-container {
+    display: flex;
+    text-align: center;
+}
+
+.box {
+    width: 300px;
+    height: 100%;
+    position: relative; /* Add relative positioning to the box container */
+    margin-right: 40px;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    border-radius: 15px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(39, 39, 39, 0.2); /* Add a semi-transparent background to make text readable */
+    opacity: 100; /* Initially hide the overlay */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Show the overlay on hover */
+.box:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    color: #fff;
+}
+
+.box-number {
+  color: #FFF;
+  text-align: center;
+  font-family: "Vollkorn", serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5px;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.box-title {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+.box-description {
+  color: #fff;
+  font-family: "Vollkorn", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.box-button {
+    color: #ffffff;
+    background-color: #023047;
+    margin-left: 0px;
+    border: 1px solid #ffffff;
+    font-size: 15px;
+  }
+
+#clear-button {
+  color: rgba(2, 48, 71, 1);
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.125px;
+  text-align: left;
+  margin-left: 10%;
+  }
+
+/* Feature Divs*/
+.flexbox-container {
+    display: flex;
+  }
+  
+  .left-flexbox {
+    flex: 1;
+    text-align: left;
+    margin-left: 100px;
+  }
+  
+  .right-flexbox {
+    flex: 1;
+    text-align: right;
+    margin-right: 0px;
+  }
+
+/* New CSS for the centered div */
+.centered-div {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .centered-div h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+
+.center-desc{
+    color: #023047;
+    text-align: center;
+    font-family: "Vollkorn", serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}  
+
+
+/* New CSS for the flexbox container and flexboxes */
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-flexbox {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .right-flexbox {
+    flex: 1;
+    text-align: right;
+  }
+
+  .feature-img{
+    width: 300px;
+    height: 300px;
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .feature-desc{
+    color: #023047;
+    font-family: "Vollkorn", serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-left: 10%;
+  }
+
+ .right-feature-img{
+  width: 300px;
+  height: 300px;
+  text-align: left;
+  margin-right: 35%; 
+ }
+
+
+ #sample-visualization {
+  background: linear-gradient(180deg, #023047 0%, #023047 0.01%, #8ECAE6 100%);
+  height: 700px;
+}
+
+.visualization {
+  display: flex;
+  flex-direction: column; /* Add this property to stack the elements vertically */
+  padding: 50px;
+}
+
+#visual-p1 {
+  color: #8ECAE6;
+  font-family: Vollkorn;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 6.6px;
+  margin-bottom: 10px; 
+  margin-left: 40px;
+}
+
+#visual-p2 {
+  color: #C6EDFF;
+  font-family: Vollkorn;
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 40px;
+}

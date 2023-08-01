@@ -1,0 +1,328 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@300;400;500;600;700&display=swap");
+
+body {
+    background: #EDF2FB;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
+}
+
+#hero-section {
+    height: 720px;
+    padding: 0px;
+    position: relative;
+  }
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+nav img {
+    cursor: pointer;
+    height: 45px;
+    margin-left: 40px;
+}
+
+nav button {
+    padding: 10px;
+    margin-left: 135px;
+    margin-right: 40px;
+    border: none;
+    background-color: #EDF2FB;
+    color: #6794A3;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+nav button:last-child span{
+    display: inline-block;
+    background-color: #8ECAE6;
+    border-radius: 20px;
+    padding: 10px 25px;
+    color: #023047;
+    margin-right: 5px;	
+}
+
+
+#search-cta {
+    border: 2px solid transparent; /* remove the border unless it's hovered over*/
+  }
+  
+#search-cta:hover {
+    border-color: #023047; /* change the border color on hover */
+ }
+
+
+nav button:hover {
+    color: #023047;
+}
+
+nav .right-buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.bgImage{
+    width: 100%;
+}
+
+
+.teamBgImage{
+    width: 100%;
+    height: 220px;
+}
+
+h1 {
+    font-family: "Vollkorn", serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: -10px;
+    color: #023047;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+}
+
+h2 {
+    color: #023047;
+    text-align: center;
+    font-family: "Vollkorn", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5.28px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 95%; /* Positioning the h2 element vertically at the middle of the parent container */
+    left: 10%; /* Positioning the h2 element horizontally at the center of the parent container */
+}
+
+#hero-p{
+    color: #023047;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    position: absolute;
+    top: 68%; /* Positioning the p element vertically at the middle of the parent container */
+    left: 63%; /* Positioning the p element horizontally at the center of the parent container */
+}
+
+/* New CSS for the 800px height section and centered elements */
+#sub-section {
+    height: 1500px;
+    background-color:#EDF2FB; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  .sub-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .centered-sub {
+    text-align: center;
+    max-width: 600px; /* Adjust the max-width as needed */
+  }
+
+    .aboutImg{
+        width: 200px;
+        height: 200px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+  
+    h3 {
+        color: #023047;
+        text-align: center;
+        font-family: "Vollkorn", serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 5.28px;
+        text-transform: uppercase;
+    }
+  
+  .centered-sub p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+    h4{
+        color: #39436F;
+        text-align: left;
+        font-family: Kumbh Sans;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 2.1px;
+        margin-top: 100px;
+        margin-left: -70px;
+    }
+
+    #mv-desc{
+        color: #070C1F;
+        font-family: Kumbh Sans;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: -45px;
+        text-align: left;
+        margin-left: 150px;
+    }
+
+  #teamIntro-section {
+    height: 180px;
+    padding: 0px;
+    position: relative;
+  }
+
+  #teamIntroh3{
+    position: absolute;
+    top: 5%; /* Positioning the h2 element vertically at the middle of the parent container */
+    left: 50%; /* Positioning the h2 element horizontally at the center of the parent container */
+    transform: translate(-50%, -50%);   
+  }
+
+  #teamIntroh1{
+    color: #023047;
+    text-align: center;
+    font-family: "Vollkorn", serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    position: absolute;
+    top: 80%; /* Positioning the h2 element vertically at the middle of the parent container */
+    left: 50%; /* Positioning the h2 element horizontally at the center of the parent container */
+    transform: translate(-50%, -50%);   
+}
+
+  #teamGrid-section {
+    height: 1200px;
+    background-color:#EDF2FB; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .team-logo{
+    cursor: pointer;
+    height: 35px;
+    margin-left: 150px; 
+    margin-top: 40px;
+  }
+
+#memberName{
+    color: #0C1438;
+    font-family: "Vollkorn", serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.46px;
+    margin-top: 20px;
+}
+
+#teamTag{
+    color: #070C1F;
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -10px;
+}
+
+/* New CSS for the teamGrid section */
+#teamGrid-section {
+    height: 1200px;
+    background-color: #EDF2FB;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 500px);
+    grid-column-gap: 10px;
+    padding: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  .box {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  
+  .box img.teamImg {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+  }
+  
+
+  #testimonial-section {
+    height: 400px;
+    background-color: #EDF2FB;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.testimonial-container {
+    text-align: center;
+}
+
+.testimonial {
+    color: #304291;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 20px;
+}
+
+.users {
+    width: 125px;
+    height: 125px;
+    margin-top: 30px; 
+}
+
+.userName{
+    color: #0C1438;
+    text-align: center;
+    font-family: Kumbh Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}
