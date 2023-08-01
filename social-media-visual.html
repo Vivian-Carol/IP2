@@ -22,15 +22,30 @@
 
 <body>
     <!-- Added in the Final Navigation Bar Here-->
-    <nav>
-        <img id="logo" src="img\Mosaic.png" alt = "Mosaic logo">
-        <div class="right-buttons">
-            <a href="homePage.html"><button>Home</button></a>    
-            <a href="aboutUs.html"><button>About us</button></a>
-            <a href="visual.html"><button>Data</button></a>
-            <button><span id="search-cta">SUBSCRIBE</span></button>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(142, 202, 230, 0.4);">
+        <div class="container">
+          <a class="navbar-brand" href="homePage.html">
+            <img class="logo" src="img/Mosaic.png" alt = "Mosaic logo" style="height: 45px; width: 90px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto me-0">
+              <li class="nav-item px-4 mx-4">
+                <a class="nav-link" href="homePage.html">Home</a>
+              </li>
+              <li class="nav-item px-4 mx-4">
+                <a class="nav-link" href="aboutUs.html">About us</a>
+              </li>
+              <li class="nav-item px-4 mx-4">
+                <a class="nav-link" href="visual.html">Data</a>
+              </li>
+              <button><span id="search-cta" style="color: #6794A3;">SUBSCRIBE</span></button>
+            </ul>
+          </div>
         </div>
-    </nav>	
+      </nav>	
     <!-- Full Page Image Header with Vertically Centered Content -->
     <header class="visual-p2">
         <div class="container h-100">
