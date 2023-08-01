@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/climate_change.css">
+</head>
+
+<body>
+    <nav class="text-center p-4">
+        <a href="visual.html"> Visualization Page 1
+        </a>
+    </nav>
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header class="visual-p2">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-white">
+                    <h1 class="fw-light">Real-time climate change Tracker</h1>
+                    <span>GAIN A GLOBAL PERSPECTIVE</span>
+                </div>
+                <div class="container text-center">
+
+                    <div class="row">
+                        <div class="col-md-auto text-white">
+                            <p><i class="bi bi-eye-fill" style="color: black;"></i> 3.47k</p>
+                        </div>
+                        <div class="col col-lg-2 text-white">
+                            <p><i class="bi bi-suit-heart-fill" style="color: black;"></i>347</p>
+                        </div>
+                        <div class="col text-white">
+                            <div id="current_date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-light">Page Content</h2>
+            <p>Climate change is one of the most critical global challenges we face today. It refers to the long-term
+                alteration of Earth's average weather patterns, primarily driven by human activities like burning fossil
+                fuels and deforestation. The consequences of climate change are far-reaching, impacting our environment,
+                societies, and economies. Below is an interactive page that explores climate change through a dynamic
+                line chart and an insightful table showcasing real-time climate data.<br>
+
+                <b><em>Understanding the Real-Time Climate Index Chart</em></b><br>
+                The line chart below presents the Real-Time Climate Index (RTCI) data, which offers an up-to-date
+                depiction of climate patterns over the years (1942-2022). Each line on the chart represents a different
+                dataset, showcasing specific climate parameters such as temperature, precipitation, or sea level. The
+                x-axis displays the date range, while the y-axis represents the corresponding values.<br>
+
+                <b><em>Interacting with the Chart</em></b><br>
+                To interact with the chart and gain deeper insights, one selects or deselects specific datasets by
+                clicking the corresponding radio button for the dataset names in the table below. It dynamically updates
+                the chart, enabling you to observe the impact of individual datasets on the overall climate index.
+                Experiment with different combinations to discern patterns, trends, and potential correlations between
+                climate parameters, e.g. the global carbon dioxide emission has a significantly increasing trend each
+                year.<br>
+
+                <b><em>The Dataset Table</em></b><br>
+                The table below complements the line chart by providing a comprehensive list of available datasets
+                associated with essential climate information. The table allows you to explore the source and
+                characteristics of each dataset. One can view a dataset from the table and focus on specific climate
+                aspects and witness their influence on the climate index chart. This interactive approach enhances your
+                understanding of how different factors contribute to climate change.
+            </p>
+            <p class="link">To be able to access the data you can follow the below link: <br> <a
+                    href="https://rapidapi.com/ezimmerman/api/real-time-climate-index">Real-time-climate-index"</a></p>
+        </div>
+    </section>
+
+    <section class="visual-p3 mb-4">
+        <div class="visual-tab">
+            <div class="tab-content pt-2 text-center" id="pills-tabContent" style="height: 600px; padding: 5%;">
+                <div class="tab-pane fade show active m-2" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab" tabindex="0" style="height: 90%"> Dataset Chart
+                    <canvas id="myChart"></canvas>
+                    <!-- Add the filter section -->
+                    <div class="filterSection">
+                        <label>
+                            <input type="radio" name="datasetFilter" value="all" checked> All Datasets
+                        </label>
+                        <label>
+                            <input type="radio" name="datasetFilter" value="Average Global Sea Levels"> Average Global
+                            Sea Levels
+                        </label>
+                        <label>
+                            <input type="radio" name="datasetFilter" value="Arctic Sea Ice Extent"> Arctic Sea Ice
+                            Extent
+                        </label>
+                        <label>
+                            <input type="radio" name="datasetFilter" value="Drought"> Drought
+                        </label>
+                        <label>
+                            <input type="radio" name="datasetFilter" value="Average Global Sea Water Temperature">
+                            Average
+                            Global Sea Water Temperature
+                        </label>
+                        <label>
+                            <input type="radio" name="datasetFilter" value="Average Global Sea SuMrface Temperature">
+                            Average
+                            Global Sea SuMrface Temperature
+                        </label>
+                        <label>
+                            <input type="radio" name="datasetFilter" value="Global Emissions of Carbon Dioxide"> Global
+                            Emissions of Carbon Dioxide
+                        </label>
+                        <label>
+                            <input type="radio" name="datasetFilter" value="Ocean Heat Content"> Ocean Heat Content
+                        </label>
+                    </div>
+                </div>
+                <div class="tab-pane fade m-2" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0" style="height: 90%;">Dataset Table
+                    <div class="table-container">
+                        <table id="datasetTable"></table>
+                    </div>
+                </div>
+                <div class="tab-pane fade m-2" id="pills-resources" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0" style="height: 90%;">
+                    <p class="paragraph"> <b>Data Source</b><br>
+                        Compiled from reputable sources like government agencies and academic
+                        institutions, it offers a comprehensive view of the factors driving climate change. By
+                        visualizing these elements, R-TCI highlights the urgency before reaching the point of no
+                        return.<br>
+                        Addressing climate change requires informed action. R-TCI provides up-to-date assessments,
+                        empowering individuals and policymakers to make crucial decisions. Dynamic data analytics and
+                        machine learning ensure accuracy and reliable index calculations.<br>
+                        <b>Data Content & Structure</b><br>
+                        The dataset includes information on climate change data across different years, location,
+                        description of the climate index, and environmental impact indicators.<br>
+                        <b><em>Data structure example:</em></b><br>
+                        apiVersion:1 <br>
+                        <em>metadata:</em><br>
+                        name:"Average Global Sea Levels"<br>
+                        <em>capacity:</em><br>
+                        currentPercentage:25.6<br>
+                        <em>data:refresh:</em><br>
+                        lastUpdated:20220201<br>
+                        historical:<br>
+                        dateRange:<br>
+                        <b>Code Execution</b><br>
+                        The code utilizes the Fetch API to communicate with the external API, and once the data is
+                        received, it can be used in various ways based on the requirements of the application. The Fetch
+                        API and JSON parsing make it easy to interact with APIs and use the data they provide in web
+                        applications.
+                    </p>
+                </div>
+            </div>
+            <div class="visual-link">
+                <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Chart</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Table</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-resources" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Resources</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-download" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false"><i class="bi bi-download"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-share" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false"><i class="bi bi-share-fill"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/climate_change.js"></script>
+</body>
+
+</html>
