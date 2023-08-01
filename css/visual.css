@@ -15,7 +15,7 @@ body {
 
 }
 /*Adding in the Navigation Bar Styling*/
-nav button {
+/* nav button {
     padding: 10px;
     margin-left: 200px;
     border: none;
@@ -45,12 +45,71 @@ nav button:last-child span {
 #search-cta {
     border: 2px solid transparent;
     /* remove the border unless it's hovered over*/
+/* } */
+/* 
+nav button:hover {
+    color: #023047;
 }
+  */
+a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+nav img {
+    cursor: pointer;
+    height: 45px;
+    margin-left: 40px;
+}
+
+nav button {
+    padding: 10px;
+    margin-left: 135px;
+    margin-right: 40px;
+    border: none;
+    background-color: #EDF2FB;
+    color: #6794A3;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+nav button:last-child span{
+    display: inline-block;
+    background-color: #8ECAE6;
+    border-radius: 20px;
+    padding: 10px 25px;
+    color: #023047;
+    margin-right: 5px;	
+}
+
+
+#search-cta {
+    border: 2px solid transparent; /* remove the border unless it's hovered over*/
+  }
+
+#search-cta:hover {
+    border-color: #023047; /* change the border color on hover */
+ }
+
 
 nav button:hover {
     color: #023047;
 }
 
+nav .right-buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
 /*Nav Bar Styling Ends here*/
 
 
