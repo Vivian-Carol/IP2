@@ -4,46 +4,49 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Jobs Worldwide</title>
+    <link rel="icon" href="./img/globe.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/jobs.css">
-          <!-- chart js -->
-          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-     <!-- Nav -->
-     <nav class="navbar navbar-expand-lg" style="background-color: rgba(142, 202, 230, 0.4);">
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(142, 202, 230, 0.4);">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img class="logo" src="img/Mosaic.png" alt = "Mosaic logo" style="height: 45px; width: 90px;">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto me-0">
-              <li class="nav-item px-4 mx-4">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item px-4 mx-4">
-                <a class="nav-link" href="aboutUs.html">About us</a>
-              </li>
-              <li class="nav-item px-4 mx-4">
-                <a class="nav-link" href="visual.html">Data</a>
-              </li>
-              <button><span id="search-cta" style="color: #6794A3;">SUBSCRIBE</span></button>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/Mosaic.png" alt="Mosaic logo" style="height: 45px; width: 90px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto me-0">
+                    <li class="nav-item px-4 mx-4">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-4 mx-4">
+                        <a class="nav-link" href="aboutUs.html">About us</a>
+                    </li>
+                    <li class="nav-item px-4 mx-4">
+                        <a class="nav-link" href="visual.html">Data</a>
+                    </li>
+                    <button><span id="search-cta" style="color: #6794A3;">SUBSCRIBE</span></button>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
     <!-- navbar end -->
-    
+
     <!-- Header -->
     <header class="visual-p2">
         <div class="container h-100">
@@ -61,137 +64,167 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </header>
 
     <!-- Page Content -->
     <section class="py-5">
         <div class="container">
             <h2 class="fw-light">Page Content</h2>
-            <p>The dataset represents the <strong>number of unemployed people in thousands,</strong> recorded across approximately 60 countries worldwide for the <strong>years 2019, 2020, and 2021.</strong> The data provides insights into the performance of the global labor market <strong>before, during, and after the COVID-19 pandemic and related restrictions.</strong> By analyzing the trends observed in this dataset, valuable inferences can be drawn about how the labor market might respond to potential future disasters or crises. Understanding the pre-COVID, during-COVID, and post-COVID labor market conditions enables policymakers, economists, and researchers to make informed decisions and implement strategies to support and strengthen the workforce in times of uncertainty and recovery</p>
+            <p>The dataset represents the <strong>number of unemployed people in thousands,</strong> recorded across
+                approximately 60 countries worldwide for the <strong>years 2019, 2020, and 2021.</strong> The data
+                provides insights into the performance of the global labor market <strong>before, during, and after the
+                    COVID-19 pandemic and related restrictions.</strong> By analyzing the trends observed in this
+                dataset, valuable inferences can be drawn about how the labor market might respond to potential future
+                disasters or crises. Understanding the pre-COVID, during-COVID, and post-COVID labor market conditions
+                enables policymakers, economists, and researchers to make informed decisions and implement strategies to
+                support and strengthen the workforce in times of uncertainty and recovery</p>
         </div>
     </section>
 
     <section class="visual-p3 mb-4">
         <div class="visual-tab" style="height: 90%;">
             <div class="tab-content pt-2 text-center" id="pills-tabContent" style="height:100%">
-                
+
                 <!-- Table section -->
-                <div class="tab-pane fade show active m-2" id="pills-table-chart" role="tabpanel" aria-labelledby="pills-table-chart-tab" tabindex="0" style="height: 100%; overflow-y: scroll;">
-                    <h6 style="text-decoration: underline; text-align: center;"> Table representing Unemployment Index (in Thousands) in countries around the world in 2019, 2020 and 2021</h6>
+                <div class="tab-pane fade show active m-2" id="pills-table-chart" role="tabpanel"
+                    aria-labelledby="pills-table-chart-tab" tabindex="0" style="height: 100%; overflow-y: scroll;">
+                    <h6 style="text-decoration: underline; text-align: center;"> Table representing Unemployment Index
+                        (in Thousands) in countries around the world in 2019, 2020 and 2021</h6>
                     <div id="job-postings-table">
                         <!-- Table populated by javascript -->
-                    </div>   
+                    </div>
                 </div>
 
                 <!-- Chart section -->
-                
-                <div class="tab-pane fade m-2" id="pills-custom-chart" role="tabpanel" aria-labelledby="pills-custom-chart-tab" tabindex="0" style="overflow-y: scroll; height: 100%;">
+
+                <div class="tab-pane fade m-2" id="pills-custom-chart" role="tabpanel"
+                    aria-labelledby="pills-custom-chart-tab" tabindex="0" style="overflow-y: scroll; height: 100%;">
                     <div class="input-group" id="chart-container">
                         <div id="filters">
-                        <div>
-                            <label for="year-select">Select Year:</label>
-                            <select id="year-select">
-                              <option value="all">All Years</option>
-                              <option value="2019">2019</option>
-                              <option value="2020">2020</option>
-                              <option value="2021">2021</option>
-                            </select>
-                          </div>
-                          
-                          <div>
-                            <label for="gender-select">Select Gender:</label>
-                            <select id="gender-select">
-                              <option value="all">All Genders</option>
-                              <option value="male">Male</option>
-                              <option value="female">Female</option>
-                            </select>
-                          </div>
-                          <button id="filter-button">Filter</button>
-                        </div>
-                        
-                            <div class="chart-content">
-                                <h6 id="chart-title">Title:</h6>
+                            <div>
+                                <label for="year-select">Select Year:</label>
+                                <select id="year-select">
+                                    <option value="all">All Years</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                </select>
                             </div>
-                            <canvas id="line-chart"></canvas>       
-                        </div> 
-                </div>      
-                
+
+                            <div>
+                                <label for="gender-select">Select Gender:</label>
+                                <select id="gender-select">
+                                    <option value="all">All Genders</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <button id="filter-button">Filter</button>
+                        </div>
+
+                        <div class="chart-content">
+                            <h6 id="chart-title">Title:</h6>
+                        </div>
+                        <canvas id="line-chart"></canvas>
+                    </div>
+                </div>
+
 
                 <!-- Resources section -->
-                <div class="tab-pane fade m-2" id="pills-resources" role="tabpanel" aria-labelledby="pills-resources-tab" tabindex="0" style="height: 100%; overflow-y: scroll;">
+                <div class="tab-pane fade m-2" id="pills-resources" role="tabpanel"
+                    aria-labelledby="pills-resources-tab" tabindex="0" style="height: 100%; overflow-y: scroll;">
                     <div class="container">
                         <h3 class="mb-4">Resources</h3>
-                        <p class="fs-6">To fetch the current data on unemployment rates from the OECD API, the application uses a JavaScript function that makes an asynchronous API call to the OECD data server. The response is in XML format, and the application then parses the XML data to extract the relevant unemployment rate information for different countries and years. The data is then processed and displayed in a tabular format and visualized in an interactive line chart using the Chart.js library.</p>
-                        <h6 style="font-style: italic;">Explore more data on the job market and unemployment rates worldwide from the following sources:</h6>
+                        <p class="fs-6">To fetch the current data on unemployment rates from the OECD API, the
+                            application uses a JavaScript function that makes an asynchronous API call to the OECD data
+                            server. The response is in XML format, and the application then parses the XML data to
+                            extract the relevant unemployment rate information for different countries and years. The
+                            data is then processed and displayed in a tabular format and visualized in an interactive
+                            line chart using the Chart.js library.</p>
+                        <h6 style="font-style: italic;">Explore more data on the job market and unemployment rates
+                            worldwide from the following sources:</h6>
                         <ul class="list-unstyled">
                             <li class="mb-3">
                                 <a href="https://data.worldbank.org/" target="_blank">World Bank Data</a>
-                                <p class="fs-6">Access a wide range of economic and social data, including employment and labor market statistics, from the World Bank's extensive database.</p>
+                                <p class="fs-6">Access a wide range of economic and social data, including employment
+                                    and labor market statistics, from the World Bank's extensive database.</p>
                             </li>
                             <li class="mb-3">
                                 <a href="https://www.oecd.org/" target="_blank">OECD Data</a>
-                                <p class="fs-6">The Organization for Economic Cooperation and Development (OECD) provides valuable data and insights on various economic and social issues, including employment and unemployment rates.</p>
+                                <p class="fs-6">The Organization for Economic Cooperation and Development (OECD)
+                                    provides valuable data and insights on various economic and social issues, including
+                                    employment and unemployment rates.</p>
                             </li>
                             <li class="mb-3">
                                 <a href="https://data.oecd.org/api/" target="_blank">OECD Data API</a>
-                                <p class="fs-6">The data presented on this page is sourced from the OECD Data API, which allows developers to access and retrieve data directly from the OECD's database using HTTP requests.</p>
+                                <p class="fs-6">The data presented on this page is sourced from the OECD Data API, which
+                                    allows developers to access and retrieve data directly from the OECD's database
+                                    using HTTP requests.</p>
                             </li>
                             <li class="mb-3">
                                 <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-                                <p class="fs-6">Connect with professionals and explore job market trends and insights from LinkedIn's vast network of users.</p>
+                                <p class="fs-6">Connect with professionals and explore job market trends and insights
+                                    from LinkedIn's vast network of users.</p>
                             </li>
                         </ul>
                     </div>
-            </div>
+                </div>
 
-            <div class="visual-link" style="height: 10%;">
-                <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-table-chart-tab" data-bs-toggle="pill" data-bs-target="#pills-table-chart" type="button" role="tab" aria-controls="pills-table-chart" aria-selected="true">Table</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-custom-chart-tab" data-bs-toggle="pill" data-bs-target="#pills-custom-chart" type="button" role="tab" aria-controls="pills-custom-chart" aria-selected="false">Chart</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-resources-tab" data-bs-toggle="pill" data-bs-target="#pills-resources" type="button" role="tab" aria-controls="pills-resources" aria-selected="false">Resources</button>
-                    </li>
-                </ul>
+                <div class="visual-link" style="height: 10%;">
+                    <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-table-chart-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-table-chart" type="button" role="tab"
+                                aria-controls="pills-table-chart" aria-selected="true">Table</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-custom-chart-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-custom-chart" type="button" role="tab"
+                                aria-controls="pills-custom-chart" aria-selected="false">Chart</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-resources-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-resources" type="button" role="tab"
+                                aria-controls="pills-resources" aria-selected="false">Resources</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
-<!-- footer -->
-<footer class="our_footer">
-    <div class="container">
-        <ul class="footer_link mx-auto">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutUs.html">About</a></li>
-        <li><a href="climate_change.html">Climate Change</a></li>
-        <li><a href="social-media-visual">Social Media Analysis</a></li>
-        <li><a href="jobs.html">Job Statistics</a></li>
-        </ul>
-        <!--footer_link ends here-->
-        
-        <ul class="social_footer_ul">
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-        <!--social_footer_ul ends here-->
-        
-    </div>
+    <!-- footer -->
+    <footer class="our_footer">
+        <div class="container">
+            <ul class="footer_link mx-auto">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="climate_change.html">Climate Change</a></li>
+                <li><a href="social-media-visual">Social Media Analysis</a></li>
+                <li><a href="jobs.html">Job Statistics</a></li>
+            </ul>
+            <!--footer_link ends here-->
 
-    <div class="text-center p-3 mt-4" style="background-color: rgba(0, 0, 0, 0.2);">
-        <p class="text-center">Copyright @2023 | Designed With by <a href="aboutUs.html" style="text-decoration: none; ">IP2 Group 6</a></p>
-      </div>
-        
-</footer>
-<!-- footer end -->
- 
-<!-- Bootstrap -->
+            <ul class="social_footer_ul">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <!--social_footer_ul ends here-->
+
+        </div>
+
+        <div class="text-center p-3 mt-4" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p class="text-center">Copyright @2023 | Designed With by <a href="aboutUs.html"
+                    style="text-decoration: none; ">IP2 Group 6</a></p>
+        </div>
+
+    </footer>
+    <!-- footer end -->
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
@@ -199,4 +232,5 @@
     <!-- Main javascrip -->
     <script src="js/jobs.js"></script>
 </body>
+
 </html>
