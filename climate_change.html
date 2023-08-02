@@ -97,7 +97,7 @@
 
     <section class="visual-p3 mb-4">
         <div class="visual-tab" style="height: 100%;">
-            <div class="tab-content pt-2 text-center" id="pills-tabContent" style="height: 100%; padding: 5%;">
+            <div class="tab-content pt-2 text-center" id="pills-tabContent" style="height: 100%; padding: 6%;">
                 <div class="tab-pane fade show active m-2" id="pills-home" role="tabpanel"
                     aria-labelledby="pills-home-tab" tabindex="0" style="height: 90%"> Dataset Chart
                     <canvas id="myChart"></canvas>
@@ -156,15 +156,14 @@
                         The dataset includes information on climate change data across different years, location,
                         description of the climate index, and environmental impact indicators.<br>
                         <b><em>Data structure example:</em></b><br>
-                        apiVersion:1 <br>
+                        {<br>
                         <em>metadata:</em><br>
                         name:"Average Global Sea Levels"<br>
                         <em>capacity:</em><br>
                         currentPercentage:25.6<br>
                         <em>data:refresh:</em><br>
                         lastUpdated:20220201<br>
-                        historical:<br>
-                        dateRange:<br>
+                        }<br>
                         <b>Code Execution</b><br>
                         The code utilizes the Fetch API to communicate with the external API, and once the data is
                         received, it can be used in various ways based on the requirements of the application. The Fetch
