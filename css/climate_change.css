@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -138,3 +146,63 @@ tr:nth-child(even) {
     border-radius: 4px;
     overflow-x: auto; /* Add horizontal scrolling for small screens */
 }
+
+/* footer */
+
+.our_footer{
+    background-color: rgba(142, 202, 230, 0.4);
+    padding: 2rem;
+}
+        
+ .footer_link {
+    list-style-type: none;
+    padding: 0px;
+    display: table;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+.footer_link li {
+    display: inline;
+}
+
+.footer_link li a {
+    color: #6794A3;
+    margin: 0 12px;
+}
+
+.footer_link li a:hover{
+    color: #023047;
+}
+
+.social_footer_ul {
+    display: table;
+    margin: 15px auto 0 auto;
+    list-style-type: none;
+}
+
+.social_footer_ul li {
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+.social_footer_ul li a {
+    color: #6794A3;
+    border: 1px solid #6794A3;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.social_footer_ul li a:hover {
+    color: #023047;
+    border: 1px solid #023047;
+}
+
+.social_footer_ul li i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+/* footer end */
